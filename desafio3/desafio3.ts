@@ -2,7 +2,7 @@
 // Você pode identificar quais são e corrigi-los em um arquivo TS?
 
 let botaoAtualizar = document.getElementById('atualizar-saldo') as HTMLButtonElement;
-let botaoLimpar = document.getElementById('limpar-saldo')as HTMLButtonElement;
+let botaoLimpar = document.getElementById('limpar-saldo') as HTMLButtonElement;
 let soma = document.getElementById('soma') as HTMLInputElement;
 let campoSaldo = document.getElementById('campo-saldo');
 
@@ -14,17 +14,17 @@ function limparCampoSoma() {
 }
 
 function somarAoSaldo(soma: number) {
-    if(campoSaldo){
-        Saldo += soma;   
+    if (campoSaldo) {
+        Saldo += soma;
         campoSaldo.innerHTML = Saldo.toString()
         limparCampoSoma()
     }
 }
 
 function limparSaldo() {
-    if(campoSaldo){
+    if (campoSaldo) {
         Saldo = 0,
-        campoSaldo.innerHTML = Saldo.toString()
+            campoSaldo.innerHTML = Saldo.toString()
         limparCampoSoma()
     }
 }

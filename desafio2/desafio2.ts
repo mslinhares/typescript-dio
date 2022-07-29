@@ -30,12 +30,12 @@ type Pessoa = {
     profissao: Profissoes
 }
 
-enum Profissoes{
+enum Profissoes {
     Atriz,
     Padeiro
 }
 
-let pessoa1:Pessoa = {
+let pessoa1: Pessoa = {
     nome: "maria",
     idade: 29,
     profissao: Profissoes.Atriz
